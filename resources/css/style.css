@@ -34,7 +34,7 @@ header {
 /* Main Banner */
 
 #banner {
-  height: 25rem;
+  height: 20rem;
   background-image: url("../images/moto.jpeg");
   background-repeat: no-repeat;
   background-position: center;
@@ -80,8 +80,15 @@ nav a {
   color: white;
   text-decoration: none;
   padding: 0.7rem 0.7rem;
-  margin: auto 0;
+  -webkit-transition-property: color, background-color;
+  -moz-transition-property: color, background-color;
+  -o-transition-property: color, background-color;
+  -ms-transition-property: color, background-color;
   transition-property: color, background-color;
+  -webkit-transition-duration: 0.25s;
+  -moz-transition-duration: 0.25s;
+  -o-transition-duration: 0.25s;
+  -ms-transition-duration: 0.25s;
   transition-duration: 0.25s;
 }
 
@@ -175,7 +182,7 @@ footer {
     justify-content: center;
   }
   nav a {
-    padding: 0.75rem, 0.75rem;
+    padding: 0.72rem 0.72rem;
   }
   .product-container {
     width: 47%;
