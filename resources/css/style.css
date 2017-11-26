@@ -66,18 +66,31 @@ header {
   width: auto;
 }
 
-#navigation nav {
+nav {
   padding: 0.75rem 0;
   display: flex;
   justify-content: space-between;
 }
 
-#navigation nav span a {
-  color: white;
-  text-decoration: none;
+nav span {
+  text-align: center;
 }
 
-#navigation nav.handheld {
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 0.7rem 0.7rem;
+  margin: auto 0;
+  transition-property: color, background-color;
+  transition-duration: 0.25s;
+}
+
+nav a:hover, nav a:active {
+  color: black;
+  background-color: white;
+}
+
+nav.handheld {
   display: none;
 }
 
@@ -154,12 +167,15 @@ footer {
   html {
     font-size: 16px;
   }
-  #navigation nav.desktop {
+  nav.desktop {
     display: none;
   }
-  #navigation nav.handheld {
+  nav.handheld {
     display: flex;
     justify-content: center;
+  }
+  nav a {
+    padding: 0.75rem, 0.75rem;
   }
   .product-container {
     width: 47%;
