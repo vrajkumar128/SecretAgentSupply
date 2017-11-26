@@ -44,13 +44,13 @@ header {
 #banner-overlay {
   position: relative;
   top: 9rem;
-  text-transform: uppercase;
-  font-weight: bold;
-  width: 20rem;
+  width: 25rem;
   background-color: #000000;
 }
 
 #headline {
+  text-transform: uppercase;
+  font-weight: bold;
   padding: 2rem 3rem;
 }
 
@@ -151,6 +151,9 @@ footer {
 /* Media Queries */
 
 @media only screen and (max-width: 1024px) {
+  html {
+    font-size: 16px;
+  }
   #navigation nav.desktop {
     display: none;
   }
@@ -163,5 +166,43 @@ footer {
   }
   .glasses {
     display: none;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  #banner {
+    height: 15rem;
+  }
+  #banner-overlay {
+    top: 10rem;
+  }
+  #headline {
+    padding: 1rem 2rem;
+  }
+  #headline h4 {
+    font-size: 0.77rem;
+  }
+  #headline h1 {
+    font-size: 1rem;
+  }
+  #product-grid .site-container {
+    justify-content: center;
+  }
+  .product-container {
+    width: 90%;
+  }
+  .watch {
+    display: none
+  }
+  #info-section .site-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .info-container {
+    width: 90%;
+    padding-bottom: 0.5rem;
+  }
+  footer {
+    text-align: center;
   }
 }
